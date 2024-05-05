@@ -1,12 +1,10 @@
 package com.project1.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import java.io.Serializable;
 
-@Entity
-public class Student {
+public class Student implements Serializable {
 	
-   @Id
+   
 	private int id;
 	private String name;
 	
