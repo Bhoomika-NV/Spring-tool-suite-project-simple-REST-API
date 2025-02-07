@@ -8,7 +8,7 @@ import com.project1.Entity.Student;
 import com.project1.Repository.StudentRepo;
 
 @Service
-public class StudentServiceImple implements StudentInterface {
+public class StudentServiceImple {
 
 	@Autowired
 	StudentRepo repo;
@@ -21,11 +21,11 @@ public class StudentServiceImple implements StudentInterface {
 	public Student getStudent(int id) {
 		return repo.findById(id);
 	}
-	
+
 	public Student updateStudent(Student student) {
 		return student;
 	}
-	
+
 	public Student deleteStudent(int id) {
 		return repo.deleteById(id);
 	}
