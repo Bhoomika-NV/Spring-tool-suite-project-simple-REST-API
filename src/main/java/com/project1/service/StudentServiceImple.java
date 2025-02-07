@@ -11,21 +11,21 @@ import com.project1.Repository.StudentRepo;
 public class StudentServiceImple implements StudentInterface {
 
 	@Autowired
-	StudentRepo  repo;
-	
+	StudentRepo repo;
+
 	public Student createStudent(Student student) {
-		 repo.save(student);
-		 return student;
+		//repo.save(student);
+		return student;
 	}
-	
-	public Student getStudent(int id) { 
-		 
+
+	public Student getStudent(int id) {
 		return repo.findById(id);
 	}
 	
 	public Student updateStudent(Student student) {
-		 return repo.save(student);
+		return student;
 	}
+	
 	public Student deleteStudent(int id) {
 		return repo.deleteById(id);
 	}
